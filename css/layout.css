@@ -1,0 +1,162 @@
+
+/*Barra de navegación*\
+@font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; src: url('../fonts/bebas-neue-v8-latin-regular.eot'); src: url('../fonts/bebas-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-v8-latin-regular.woff2') format('woff2'), url('../fonts/bebas-neue-v8-latin-regular.woff') format('woff'), url('../fonts/bebas-neue-v8-latin-regular.ttf') format('truetype'), url('../fonts/bebas-neue-v8-latin-regular.svg#BebasNeue') format('svg'); }
+
+@font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
+
+html{
+    scroll-behavior: smooth;
+}
+
+#titulo{
+    background-color: red;
+    margin: auto;
+    display: block;
+    font-family: Bebas Neue;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 12ch;
+
+    animation: typing 4s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color:transparent }
+}
+
+body{
+    background-color: darkgrey;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+  }
+  
+ul {
+    background: #333;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    height: 40;
+    width: 100%;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 68px;
+}
+  
+li {
+    color: #fff;
+    background: #333;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+    
+li a {
+    color: #fff;
+}
+  
+li:hover {
+    background: red;
+    cursor: pointer;
+}
+  
+ul li ul {
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+  
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#jordanlogo{
+    width: 32px;
+    height: 32px;
+}
+
+#adidaslogo{
+    width: 32px;
+    height: 32px;
+}
+
+.complementos{
+    height: 36px;
+}
+
+#exclusive{
+    text-shadow: 0 0 0.2em #FF0000;
+    font-size: 120%;
+}
+
+#complementos{
+    text-shadow: 0 0 0.2em #FF0000;
+    font-size: 120%;
+}
+
+.contacto{
+    float: right;
+    text-align: center;
+    margin-right: 0.5cm;
+}
+
+.cesta{
+    float: right;
+    text-align: center;
+    margin-right: 0.5cm;
+}
+
+header{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    background-color: black;
+    padding: 45px;
+    background-image: url(../multimedia/tienda.jpg);
+    position: static;
+}
+
+/* Parte final *\
+
+h4{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nombres{
+    background-color: #100c08;
+    padding: 30px;
+}
+
+.santy{text-shadow: 0 0 0.2em #ff14ff}
+.mingo{text-shadow: 0 0 0.2em #099FFF}
+.roca{text-shadow: 0 0 0.2em #FF0000}
+.marlo{text-shadow: 0 0 0.2em #00FF00}
