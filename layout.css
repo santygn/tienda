@@ -128,7 +128,7 @@ ul li ul:focus {
 }
 
 /*Header*/
-header{
+.head-titulo{
     text-align: center;
     font-size: 45px;
     color: black;
