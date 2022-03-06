@@ -144,8 +144,9 @@ header{
     font-family: monospace;
 }
 
-form{
-    font-size: 20px;
+iframe{
+    display: block;
+    margin: auto;
 }
 
 .nombres{
