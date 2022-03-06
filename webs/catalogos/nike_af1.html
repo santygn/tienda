@@ -1,189 +1,166 @@
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Air Force</title>
-  <link rel="stylesheet" href="../../css/catalogo.css">
-  <link rel="icon" href="../../multimedia/logo.png">
-</head>
-<body>
-  <!--Lnk rel si queréis poner iconos de Boostrap (en el head)-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+@font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; src: url('../fonts/bebas-neue-v8-latin-regular.eot'); src: url('../fonts/bebas-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-v8-latin-regular.woff2') format('woff2'), url('../fonts/bebas-neue-v8-latin-regular.woff') format('woff'), url('../fonts/bebas-neue-v8-latin-regular.ttf') format('truetype'), url('../fonts/bebas-neue-v8-latin-regular.svg#BebasNeue') format('svg'); }
 
-  <!--Header con el nombre de la tienda y la barra de navegación-->
-  <!--Barra de navegación-->
-  <header>
-    <nav class="navbar">
-      <ul class="navbar">
-        <li><a href="tienda.html">
-          <i class="bi bi-house"></i>
-        </a></li>
+@font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
+
+.titulo{
+    background-color: red;
+    margin: auto;
+    display: block;
+    font-family: Bebas Neue;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 9ch;
+
+    animation: typing 4s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color:transparent }
+}
+
+body{
+    background-color: darkgrey;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar nav {
+    font-family: monospace;
+    font-size: 1vh;
+
+}
+  
+.navbar ul {
+    background: #333;
+    list-style: none;
+    margin: 0;
+    padding-left:0;
+    width: 100%;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navbar li {
+    color: #fff;
+    background: #333;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
     
-        <li><a href="#">
-            <img src="../../multimedia/nike-32.ico" alt="logo">
-        </a>
-          <ul class="dropdown">
-            <li><a href="#">Airmax</a></li>
-            <li><a href="#">Air Force</a></li>
-            <li><a href="#">Dunk</a></li>
-          </ul>
-        </li>
-    
-        <li><a href="">
-          <img id="jordanlogo" src="../../multimedia/jordan.png" alt="logo">
-        </a>
-          <ul class="dropdown">
-              <li><a href="#">Jordan I</a></li>
-              <li><a href="#">Jordan III</a></li>
-              <li><a href="#">Jordan IV</a></li>
-              <li><a href="#">Jordan XI</a></li>
-          </ul>
-        </li>
-    
-        <li><a href="#">
-          <img id="adidaslogo" src="../../multimedia/adidas.ico" alt="logo">
-        </a>
-          <ul class="dropdown">
-              <li><a href="#">NMD</a></li>
-              <li><a href="#">Ozweego</a></li>
-              <li><a href="#">Forum</a></li>
-          </ul>
-        </li>
-    
-        <li><a href="#"><div class="categorias">Exclusivo</div></a>
-          <ul class="dropdown">
-              <li><a href="#">Travis Collection</a></li>
-              <li><a href="#">Nike X Off-White</a></li>
-              <li><a href="#">Yeezy</a></li>
-              <li><a href="#">Rarezas</a></li>
-          </ul>
-        </li>
-    
-        <li><a href="#"><div class="categorias">Complementos</div></a>
-          <ul class="dropdown">
-              <li><a href="#">Cinturones</a></li>
-              <li><a href="#">Bandoleras</a></li>
-              <li><a href="#">Bolsos</a></li>
-          </ul>
-      </li>
-    
-        <li class="icons"><a href="../webs/contacto.html">
-          <i class="bi bi-chat-left-text"></i>
-        </a></li>
-    
-        <li class="icons"><a href="cesta.html">
-          <i class="bi bi-cart3"></i>
-       </a></li>
-    
-       <!--Si la página es pública-->
-      <li class="icons"><a href="#">
-        <i class="bi bi-box-arrow-in-right"></i>
-      </a></li>
-      </ul>
-    </nav>
-    <br><br><br>
-    <!--Titulo-->
-    <div class="head-titulo">
-      <span class="titulo">AIR FORCE 1</span>
-    </div>
-  </header>
+.navbar li a {
+    color: #fff;
+}
+  
+.navbar li:hover {
+    background: red;
+    cursor: pointer;
+}
 
-  <!--Contenido-->
-  <section>
-    <table>
-        <tr>
-            <td><img class="img-product" src="../../multimedia/swarovski.jpg" width="592" height="592"></td>
-            <td><img class="img-product" src="../../multimedia/purple_skeleton.jpg" width="592" height="592"></td>
-            <td><img class="img-product" src="../../multimedia/af1_travis.jpg" width="592" height="592"></td>
-        </tr>
+.navbar li:focus-within a{
+    outline: none;
+}
+  
+.navbar ul li ul {
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+  
+.navbar ul li:hover > ul,
+ul i :focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+.navbar ul li ul li {
+    clear: both;
+    width: 100%;
+}
 
-        <tr>
-            <td class="product-name"><br> AF1 SWAROVSKI</td><br>
-            <td class="product-name"><br> AF1 PURPLE SKELETON</td>
-            <td class="product-name"><br> AF1 TRAVIS SCOTT</td>
-        </tr>
+#jordanlogo{
+    width: 32px;
+    height: 32px;
+}
 
-        <tr>
-            <td class="precio">459€</td>
-            <td class="precio">191€</td>
-            <td class="precio">524€</td>
-        </tr>
+#adidaslogo{
+    width: 32px;
+    height: 32px;
+}
 
-        <tr>
-          <td class="talla"><br>
-              <select name="talla" id="talla">
-                  <option value="" selected>Escoge tu talla</option>
-                  <option value="38">38</option>
-                  <option value="38.5">38.5</option>
-                  <option value="39">39</option>
-                  <option value="39.5">39.5</option>
-                  <option value="40">40</option>
-                  <option value="40.5">40.5</option>
-                  <option value="41">41</option>
-                  <option value="41.5">41.5</option>
-                  <option value="42">42</option>
-                  <option value="42.5">42.5</option>
-                  <option value="43">43</option>
-                  <option value="43.5">43.5</option>
-                  <option value="44">44</option>
-                  <option value="44.5">44.5</option>
-                  <option value="45">45</option>
-              </select></td>
+.categorias{
+    text-shadow: 0 0 0.2em #FF0000;
+    font-size: 120%;
+}
 
-              <td class="talla"><br>
-                  <select name="talla" id="talla">
-                  <option value="" selected>Escoge tu talla</option>
-                  <option value="38">38</option>
-                  <option value="38.5">38.5</option>
-                  <option value="39">39</option>
-                  <option value="39.5">39.5</option>
-                  <option value="40">40</option>
-                  <option value="40.5">40.5</option>
-                  <option value="41">41</option>
-                  <option value="41.5">41.5</option>
-                  <option value="42">42</option>
-                  <option value="42.5">42.5</option>
-                  <option value="43">43</option>
-                  <option value="43.5">43.5</option>
-                  <option value="44">44</option>
-                  <option value="44.5">44.5</option>
-                  <option value="45">45</option>
-              </select></td>    
+.navbar .icons{
+    float: right;
+    text-align: center;
+    margin-right: 0.5cm;
+}
 
-              <td class="talla"><br>
-                  <select name="talla" id="talla">
-                  <option value="" selected>Escoge tu talla</option>
-                  <option value="38">38</option>
-                  <option value="38.5">38.5</option>
-                  <option value="39">39</option>
-                  <option value="39.5">39.5</option>
-                  <option value="40">40</option>
-                  <option value="40.5">40.5</option>
-                  <option value="41">41</option>
-                  <option value="41.5">41.5</option>
-                  <option value="42">42</option>
-                  <option value="42.5">42.5</option>
-                  <option value="43">43</option>
-                  <option value="43.5">43.5</option>
-                  <option value="44">44</option>
-                  <option value="44.5">44.5</option>
-                  <option value="45">45</option>
-              </select></td>
-      </tr>
+.navbar i{
+    font-size: 32px;
+}
 
-        <tr>
-            <td class="carrito"><br><button class="carrito-button"><a href="#" onclick="alert('Añadido correctamente a la cesta')">Añadir al carrito</a></button></td>
-            <td class="carrito"><br><button class="carrito-button"><a href="#" onclick="alert('Añadido correctamente a la cesta')">Añadir al carrito</a></button></td>
-            <td class="carrito"><br><button class="carrito-button"><a href="#" onclick="alert('Añadido correctamente a la cesta')">Añadir al carrito</a></button></td>
-        </tr>
-    </table>
-  </section>
-  <br><br><br>
+.dropdown{
+    font-size: 15px;
+    text-align: center;
+}
 
-    <!--Footer (parte final)-->
-<footer class="nombres">
-    <h4><span class="santy">Santiago Guillén</span> -  <span class="mingo">Adrián Mingorance</span> - <span class="roca">Alejandro Roca</span> -  <span class="marlo">Marlo Roig</span> </h4>
-</footer>
-</body>
-</html>
+header{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    background-color: black;
+    padding: 45px;
+    background-image: url(../multimedia/tienda.jpg);
+    position: static;
+}
+
+.subtitulo{
+    border-left: groove red;
+    padding-left: 15px;
+    color: white;
+    background-color: black;
+    font-family: monospace;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+.nombres{
+    background-color: #100c08;
+    padding: 30px;
+}
+
+h4{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+.santy{text-shadow: 0 0 0.2em #ff14ff}
+.mingo{text-shadow: 0 0 0.2em #099FFF}
+.roca{text-shadow: 0 0 0.2em #FF0000}
+.marlo{text-shadow: 0 0 0.2em #00FF00}
