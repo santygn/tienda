@@ -24,17 +24,25 @@
     50% { border-color:transparent }
 }
 
+/*Body*/
 body{
     background-color: darkgrey;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+    max-width: 100%;
+    margin:0;
+
 }
 
+/*Navbar y dropdown*/
 .navbar a{
     text-decoration: none;
 }
 
 .navbar nav {
     font-family: monospace;
-    font-size: 1vw;
+    font-size: 2em;
 }
   
 .navbar ul {
@@ -42,9 +50,10 @@ body{
     list-style: none;
     margin: 0;
     padding-left:0;
-    width: 100%;
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 50em;
+    width: 100%;
 }
   
 .navbar li {
@@ -97,19 +106,14 @@ ul li ul:focus {
     width: 100%;
 }
 
-.dropdown{
-    font-size: 15px;
-    text-align: center;
-}
-
 #jordanlogo{
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
 }
 
 #adidaslogo{
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
 }
 
 .categorias{
@@ -124,31 +128,23 @@ ul li ul:focus {
 }
 
 .navbar i{
-    font-size: 32px;
+    font-size: 2em;
+}
+
+.dropdown{
+    font-size: 15px;
+    text-align: center;
 }
 
 /*Header*/
-header{
+.head-titulo{
     text-align: center;
     font-size: 45px;
     color: black;
     background-color: black;
     padding: 45px;
     background-image: url(../multimedia/tienda.jpg);
-    position: static;
-}
-
-/*Footer*/
-.nombres{
-    background-color: #100c08;
-    padding: 30px;
-}
-
-h4{
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5vw;
+    position: -webkit-sticky;
 }
 
 form{
@@ -216,3 +212,26 @@ h2{
     background-color: black;
     font-family: monospace;
 }
+
+/*Footer*/
+.nombres{
+    background-color: #100c08;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    vertical-align: auto;
+}
+
+h4{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+.santy{text-shadow: 0 0 0.2em #ff14ff}
+.mingo{text-shadow: 0 0 0.2em #099FFF}
+.roca{text-shadow: 0 0 0.2em #FF0000}
+.marlo{text-shadow: 0 0 0.2em #00FF00}
