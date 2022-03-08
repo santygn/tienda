@@ -1,9 +1,9 @@
-/*Insertar fuentes*/
+/*Fuentes externas*/
 @font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; src: url('../fonts/bebas-neue-v8-latin-regular.eot'); src: url('../fonts/bebas-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-v8-latin-regular.woff2') format('woff2'), url('../fonts/bebas-neue-v8-latin-regular.woff') format('woff'), url('../fonts/bebas-neue-v8-latin-regular.ttf') format('truetype'), url('../fonts/bebas-neue-v8-latin-regular.svg#BebasNeue') format('svg'); }
 
 @font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
 
-
+/*Animacion (maquina de escribir)*/
 .titulo{
     background-color: red;
     margin: auto;
@@ -24,17 +24,25 @@
     50% { border-color:transparent }
 }
 
+/*Body*/
 body{
     background-color: darkgrey;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+    max-width: 100%;
+    margin:0;
+
 }
 
+/*Navbar y dropdown*/
 .navbar a{
     text-decoration: none;
 }
 
 .navbar nav {
     font-family: monospace;
-    font-size: 1vw;
+    font-size: 2em;
 }
   
 .navbar ul {
@@ -42,9 +50,10 @@ body{
     list-style: none;
     margin: 0;
     padding-left:0;
-    width: 100%;
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 50em;
+    width: 100%;
 }
   
 .navbar li {
@@ -98,13 +107,13 @@ ul li ul:focus {
 }
 
 #jordanlogo{
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
 }
 
 #adidaslogo{
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
 }
 
 .categorias{
@@ -119,7 +128,7 @@ ul li ul:focus {
 }
 
 .navbar i{
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .dropdown{
@@ -135,13 +144,21 @@ ul li ul:focus {
     background-color: black;
     padding: 45px;
     background-image: url(../multimedia/tienda.jpg);
-    position: static;
+    position: -webkit-sticky;
 }
+
+/*Contenido*/
+
 
 /*Footer*/
 .nombres{
     background-color: #100c08;
-    padding: 30px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    vertical-align: auto;
 }
 
 h4{
