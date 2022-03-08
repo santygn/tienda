@@ -1,4 +1,4 @@
-/*Fuentes externas*/
+/*Insertar fuentes*/
 @font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; src: url('../fonts/bebas-neue-v8-latin-regular.eot'); src: url('../fonts/bebas-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-v8-latin-regular.woff2') format('woff2'), url('../fonts/bebas-neue-v8-latin-regular.woff') format('woff'), url('../fonts/bebas-neue-v8-latin-regular.ttf') format('truetype'), url('../fonts/bebas-neue-v8-latin-regular.svg#BebasNeue') format('svg'); }
 
 @font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
