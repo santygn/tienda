@@ -88,18 +88,22 @@
     </div>
   </header>
 
-    <section>
-        <h2 class=".sub">Ponte en contacto con nosotros ⮕ </h2>
-            <br>
+    <h2 class=".sub">Ponte en contacto con nosotros ⮕ </h2>
+    <section class="login">
+            
+            <h3 class="login-titulo">Rellena los datos solicitados a continuacion:</h3><br>
             <form action="data.html" method="get">
-                <label for="name">Introduce tu nombre:</label><br>
-                <input type="text" name="nombre" id="name" placeholder="Ejemplo: Juanjo Amengual">
+                <div class="rellenables">
+                  <input type="text" name="nombre" id="name" placeholder="  Introduce tu nombre">
+                </div>
                 <br><br>
-                <label for="email">Introduce tu correo:</label><br>
-                <input type="email" name="correo" id="email" placeholder="ejemplo@xxxx.com">
+                <div class="rellenables">
+                  <input type="email" name="correo" id="email" placeholder= "  Introduce tu correo">
+                </div>
                 <br><br>
-                <label for="message">Introduce tu mensaje:</label><br>
-                <textarea name="mensaje" id="message" cols="30" rows="10"></textarea>
+                <div class="rellenables">
+                  <textarea name="mensaje" id="message" cols="30" rows="10" placeholder="  Escribe aquí tu mensaje"></textarea>
+                </div>
                 <br><br>
                 <input class="button" type="submit" value="Enviar">
             </form>
