@@ -147,17 +147,34 @@ ul li ul:focus {
     position: -webkit-sticky;
 }
 
-form{
-    font-size: 1.25vw;
-    font-family: monospace;
-    margin-left: 1.5cm;
+.login{
+    margin: 20px auto;
+    width: 500px;
+    padding-top: 2.5em;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
 
+.login-titulo{
+    text-align: center;
+    color: #777;
+    text-decoration: underline solid #777   ;
+}
+
+form{
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.rellenables{
+    margin-bottom: 5px;
 }
 
 input[type=email], select {
-    width: 25%;
-    padding: 1vw;
-    margin: 8px 0;
+    width: 400px;
+    padding: 10px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -165,9 +182,8 @@ input[type=email], select {
   }
 
   input[type=text], select {
-    width: 25%;
-    padding: 1vw;
-    margin: 8px 0;
+    width: 400px;
+    padding: 10px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -175,22 +191,27 @@ input[type=email], select {
   }
 
   textarea, select {
-    width: 25%;
-    padding: 1vw;
-    margin: 8px 0;
+    width: 400px;
+    padding: 10px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+  input:focus, textarea:focus{
+    outline: none;
+    border: 2px solid red;
+    color: white;
+    background-color: #333;
+  }
   
   .button {
-    font-size: 1vw;
-    width: 30%;
+    font-size: 15px;
+    width: 200px;
     color: white;
-    padding: 1vw;
+    padding: 15px 0;
     background-color: #333;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
