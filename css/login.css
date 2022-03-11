@@ -157,26 +157,26 @@ ul li ul:focus {
     }
 
     .login {
-    margin: 20px auto;
-    width: 300px;
-    padding-top: 2.5em;
+    margin: auto;
+    width: 350px;
+    padding-top: 3.5em;
     }
     .login-screen {
     background-color: #FFF;
-    padding: 20px;
-    border-radius: 5px
+    height: 375px;
+    border-radius: 5px;
+    padding-top: 20px;
     }
     
-    .app-title {
+    .form-title {
     text-align: center;
     color: #777;
+    text-decoration: underline solid;
     }
     
     .login-form {
     text-align: center;
-    }
-    .control-group {
-    margin-bottom: 10px;
+    padding-top: 15px;
     }
     
     input {
@@ -187,7 +187,7 @@ ul li ul:focus {
     font-size: 16px;
     font-weight: 200;
     padding: 10px 0;
-    width: 250px;
+    width: 300px;
     transition: border .5s;
     }
     
@@ -209,7 +209,7 @@ ul li ul:focus {
       box-shadow: none;
       transition: 0.25s;
       display: block;
-      width: 250px;
+      width: 300px;
       margin: 0 auto;
     }
     
@@ -218,7 +218,7 @@ ul li ul:focus {
     }
     
     .login-link {
-      font-size: 12px;
+      font-size: 14px;
       color: #444;
       display: block;
         margin-top: 12px;
