@@ -83,12 +83,6 @@
           <li><a href="login.html">Log in</a></li>
         </ul>
       </li>
-
-      <!--Icono del usuario (privada)
-      <li class="icons"><a href="#">
-        <i class="bi bi-person-circle"></i>
-      </a></li>
-      -->
         </ul>
     </nav>
       <br><br><br>
@@ -103,25 +97,18 @@
     <section>
             <div class="login">
                 <div class="login-screen">
-                    <div class="app-title">
+                    <div class="form-title">
                         <h1>Iniciar sesión</h1>
                     </div>
         
-                    <div class="login-form">
-                        <div class="control-group">
+                    <form class="login-form" action="tienda.html" method="GET">
                         <input type="text" class="login-field" placeholder="usuario" id="login-name">
-                        <label class="login-field-icon fui-user" for="login-name"></label>
-                        </div>
-        
-                        <div class="control-group">
-                        <input type="password" class="login-field"
-                         placeholder="contraseña" id="login-pass">
-                        <label class="login-field-icon fui-lock" for="login-pass"></label>
-                        </div>
-        
-                        <a class="btn btn-primary btn-large btn-block" href="#">Login</a>
+                        <br><br>
+                        <input type="password" class="login-field" placeholder="contraseña" id="login-pass">
+                        <br><br><br>
+                        <input onclick="alert('Iniciaste sesión correctamente')" class="btn" type="submit" value="Login"></input>
                         <a class="login-link" href="#">¿Olvidaste tu contraseña?</a>
-                    </div>
+                    </form>
                 </div>
             </div>
     </section>
