@@ -1,0 +1,238 @@
+/*Insertar fuentes*/
+@font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; src: url('../fonts/bebas-neue-v8-latin-regular.eot'); src: url('../fonts/bebas-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-v8-latin-regular.woff2') format('woff2'), url('../fonts/bebas-neue-v8-latin-regular.woff') format('woff'), url('../fonts/bebas-neue-v8-latin-regular.ttf') format('truetype'), url('../fonts/bebas-neue-v8-latin-regular.svg#BebasNeue') format('svg'); }
+
+@font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
+
+
+.titulo{
+    background-color: red;
+    margin: auto;
+    display: block;
+    font-family: Bebas Neue;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 14ch;
+
+    animation: typing 4s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color:transparent }
+}
+
+/*Body*/
+body{
+    background-color: darkgrey;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+    max-width: 100%;
+    margin:0;
+
+}
+
+/*Navbar y dropdown*/
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar nav {
+    font-family: monospace;
+    font-size: 2em;
+}
+  
+.navbar ul {
+    background: #333;
+    list-style: none;
+    margin: 0;
+    padding-left:0;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 50em;
+    width: 100%;
+}
+  
+.navbar li {
+    color: #fff;
+    background: #333;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+    
+.navbar li a {
+    color: #fff;
+}
+  
+.navbar li:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.navbar li:focus-within a{
+    outline: none;
+}
+  
+.navbar ul li ul {
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+  
+.navbar ul li:hover > ul,
+ul i :focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+.navbar ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#jordanlogo{
+    width: 2em;
+    height: 2em;
+}
+
+#adidaslogo{
+    width: 2em;
+    height: 2em;
+}
+
+.categorias{
+    text-shadow: 0 0 0.2em #FF0000;
+    font-size: 120%;
+}
+
+.navbar .icons{
+    float: right;
+    text-align: center;
+    margin-right: 0.5cm;
+}
+
+.navbar i{
+    font-size: 2em;
+}
+
+.dropdown{
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Header*/
+.head-titulo{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    background-color: black;
+    padding: 45px;
+    background-image: url(../multimedia/tienda.jpg);
+    position: -webkit-sticky;
+}
+
+/*Catálogo*/
+table{
+    margin:auto
+}
+
+.product-name{
+    text-align: center;
+    font-family: Alfa Slab One;
+    font-size: 1.5vw;
+}
+
+.precio{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.25vw;
+}
+
+.img-product{
+    width: 30vw;
+    height: 30vw;
+}
+
+.talla{
+    text-align: center; 
+}
+
+td{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+select{
+    width: 40%;
+    height: 35px;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+.carrito-button{
+    font-size: 0.8vw;
+    width: 60%;
+    color: white;
+    padding: 1vw;
+    background-color: #333;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: rgb(170, 54, 54);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.carrito-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.carrito-button:hover{
+    box-shadow: 0 0 10px 0 #db3434 inset, 0 0 10px 4px #db3434;
+    background-color: rgb(170, 54, 54);
+}
+
+.carrito{
+    text-align: center;
+}
+
+/*Footer*/
+.nombres{
+    background-color: #100c08;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    vertical-align: auto;
+}
+
+h4{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+.santy{text-shadow: 0 0 0.2em #ff14ff}
+.mingo{text-shadow: 0 0 0.2em #099FFF}
+.roca{text-shadow: 0 0 0.2em #FF0000}
+.marlo{text-shadow: 0 0 0.2em #00FF00}
