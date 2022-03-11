@@ -157,10 +157,25 @@ ul li ul:focus {
     }
 
     .login {
-    margin: auto;
-    width: 350px;
-    padding-top: 3.5em;
+        margin: auto;
+        width: 350px;
+        padding-top: 3.5em;
     }
+
+    .SingUp {
+        margin: auto;
+        width: 900px;
+        padding-top: 3.5em;
+        padding-bottom: 10px;
+    }
+
+    .Singup-screen {
+        background-color: #FFF;
+        height: 520px;
+        border-radius: 5px;
+        padding-top: 20px;
+    }
+
     .login-screen {
     background-color: #FFF;
     height: 375px;
@@ -222,7 +237,10 @@ ul li ul:focus {
       color: #444;
       display: block;
         margin-top: 12px;
+        
     }
+
+
 
 /*Footer*/
 .nombres{
