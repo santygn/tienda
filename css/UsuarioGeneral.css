@@ -152,16 +152,31 @@ ul li ul:focus {
 
 /*Contenido*/
 .imgRedonda {
-    width:150px;
-    height:150px;
+    width:175px;
+    height:175px;
     border-radius:160px;
     border:5px solid red;
     margin-left: 35px;
 }
+.tabla{
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+}
 
+
+.tt{
+    font-size:60px;
+    color: #fff;
+}
+.h{
+    font-size: 25px;
+    color: #fff;
+}
 .user-screen {
     background-color: #FFF;
-    height: 375px;
+    height: 700px;
+
     border-radius: 5px;
     padding-top: 20px;
     margin-top: 25px;
@@ -169,17 +184,49 @@ ul li ul:focus {
     margin-right: 75px;
    
 }
-
+.link_a{
+    text-decoration: none;
+    color: #FFF;
+}
+.bb{
+    float: under;
+    top: 50px;
+    left: 50px;
+    background: red;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.cc{
+    
+    float: under;
+    left:45px;
+    margin-top: 100px;
+    background: red;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.hz{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: underline;
+}
 .enter-user-screen {
+    margin-top: 50px;
     text-align: center;
     background-color: red;
-    height: 375px;
+    width:1500px;
+    float: right;
     border-radius: 5px;
-    padding-top: 20px;
-   
-    margin-left: 15%;
-    margin-right: 75px;
-   
+    margin-right: 10px;
+    
 }
 
 /*Footer*/
