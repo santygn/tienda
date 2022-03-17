@@ -1,0 +1,362 @@
+/*Insertar fuentes*/
+@font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; src: url('../fonts/bebas-neue-v8-latin-regular.eot'); src: url('../fonts/bebas-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-v8-latin-regular.woff2') format('woff2'), url('../fonts/bebas-neue-v8-latin-regular.woff') format('woff'), url('../fonts/bebas-neue-v8-latin-regular.ttf') format('truetype'), url('../fonts/bebas-neue-v8-latin-regular.svg#BebasNeue') format('svg'); }
+
+@font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
+
+
+.titulo{
+    background-color: red;
+    margin: auto;
+    display: block;
+    font-family: Bebas Neue;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 14ch;
+
+    animation: typing 4s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color:transparent }
+}
+
+/*Body*/
+body{
+    background-color: darkgrey;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+    max-width: 100%;
+    margin:0;
+
+}
+
+/*Navbar y dropdown*/
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar nav {
+    font-family: monospace;
+    font-size: 2em;
+}
+  
+.navbar ul {
+    background: #333;
+    list-style: none;
+    margin: 0;
+    padding-left:0;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 50em;
+    width: 100%;
+}
+  
+.navbar li {
+    color: #fff;
+    background: #333;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+    
+.navbar li a {
+    color: #fff;
+}
+  
+.navbar li:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.navbar li:focus-within a{
+    outline: none;
+}
+  
+.navbar ul li ul {
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+  
+.navbar ul li:hover > ul,
+ul i :focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+.navbar ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#jordanlogo{
+    width: 2em;
+    height: 2em;
+}
+
+#adidaslogo{
+    width: 2em;
+    height: 2em;
+}
+
+.categorias{
+    text-shadow: 0 0 0.2em #FF0000;
+    font-size: 120%;
+}
+
+.navbar .icons{
+    float: right;
+    text-align: center;
+    margin-right: 0.5cm;
+}
+
+.navbar i{
+    font-size: 2em;
+}
+
+.dropdown{
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Header*/
+.head-titulo{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    background-color: black;
+    padding: 45px;
+    background-image: url(../multimedia/tienda.jpg);
+    position: -webkit-sticky;
+}
+
+/*Catálogo*/
+table{
+    margin:auto;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.pago a{
+    text-decoration: none;
+    color: white;
+}
+
+.product-name{
+    text-align: center;
+    font-family: Alfa Slab One;
+    font-size: 1.5vw;
+    text-decoration: underline solid black;
+    height: 120;
+}
+
+.product-info{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.25vw;
+    vertical-align: sub;
+    height: 100;
+}
+
+td{
+    padding-left: 20;
+    padding-right: 20;
+}
+
+.precio{
+    text-align: center;
+    font-family: Alfa Slab One;
+    font-size: 1.25vw;
+    vertical-align: sub;
+    height: 100;
+}
+
+.img-product{
+    width: 30vw;
+    height: 30vw;
+    border: double black 5px;
+}
+
+.talla{
+    text-align: center; 
+}
+
+.img-row{
+    width: 420;
+}
+
+.no-stock{
+    color:rgb(196, 57, 57);
+    text-shadow: black;
+}
+
+.stock{
+    color: rgb(79, 223, 79);
+    text-shadow: black;
+}
+
+select{
+    width: 20%;
+    height: 35px;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+select:hover{
+    background-color: #333;
+    color: white;
+
+}
+
+.carrito-button{
+    font-size: 0.8vw;
+    width: 60%;
+    color: white;
+    padding: 1vw;
+    background-color: #333;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: rgb(170, 54, 54);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.carrito-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.carrito-button:hover{
+    box-shadow: 0 0 10px 0 #db3434 inset, 0 0 10px 4px #db3434;
+    background-color: rgb(170, 54, 54);
+}
+
+.carrito{
+    text-align: center;
+}
+
+.pago{
+    font-size: 0.8vw;
+    width: 20%;
+    color: white;
+    padding: 1vw;
+    background-color: #333;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: rgb(170, 54, 54);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    text-align: center;
+}
+
+.recibo{
+    text-align: center;
+}
+
+.carrito-button{
+    font-size: 0.8vw;
+    width: 30%;
+    color: white;
+    padding: 1vw;
+    background-color: #333;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: rgb(170, 54, 54);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.carrito-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.carrito-button:hover{
+    box-shadow: 0 0 10px 0 #db3434 inset, 0 0 10px 4px #db3434;
+    background-color: rgb(170, 54, 54);
+}
+
+.carrito{
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Codystar';}
+
+.neons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.neons h2 {
+  font-size: 5rem;
+  font-family: fantasy;
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #dd2020, 0 0 20px #f32d2d, 0 0 30px #f53030, 0 0 40px #ee2929;
+  }
+
+  to{
+      color: transparent;
+  }
+}
+
+
+/*Footer*/
+.nombres{
+    background-color: #100c08;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    vertical-align: auto;
+}
+
+h4{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+.santy{text-shadow: 0 0 0.2em #ff14ff}
+.mingo{text-shadow: 0 0 0.2em #099FFF}
+.roca{text-shadow: 0 0 0.2em #FF0000}
+.marlo{text-shadow: 0 0 0.2em #00FF00}
