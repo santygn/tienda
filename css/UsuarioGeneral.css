@@ -3,7 +3,7 @@
 
 @font-face { font-family: 'Alfa Slab One'; font-style: normal; font-weight: 400; src: url('../fonts/alfa-slab-one-v16-latin-regular.eot'); src: url('../fonts/alfa-slab-one-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/alfa-slab-one-v16-latin-regular.woff2') format('woff2'), url('../fonts/alfa-slab-one-v16-latin-regular.woff') format('woff'), url('../fonts/alfa-slab-one-v16-latin-regular.ttf') format('truetype'), url('../fonts/alfa-slab-one-v16-latin-regular.svg#AlfaSlab One') format('svg'); }
 
-/*Animacion (maquina de escribir)*/
+
 .titulo{
     background-color: red;
     margin: auto;
@@ -11,7 +11,7 @@
     font-family: Bebas Neue;
     white-space: nowrap;
     border-right: 2px solid;
-    width: 9ch;
+    width: 12ch;
 
     animation: typing 4s steps(10), blink .5s infinite step-end alternate;
     overflow: hidden;
@@ -19,9 +19,6 @@
 @keyframes typing {
     from { width: 0 }
 }
-
-
-
 
 @keyframes blink {
     50% { border-color:transparent }
@@ -31,7 +28,7 @@
 body{
     background-color: darkgrey;
     position: relative;
-    padding-bottom: 10em;
+    padding-bottom: 9.75vw;
     min-height: 100vh;
     max-width: 100%;
     margin:0;
@@ -151,84 +148,62 @@ ul li ul:focus {
 }
 
 /*Contenido*/
-.imgRedonda {
-    width:175px;
-    height:175px;
-    border-radius:160px;
-    border:5px solid red;
-    margin-left: 35px;
+.sub{
+    border-left: groove 5px red ;
+    padding-left: 15px;
+    color: white;
+    background-color: black;
+    font-family: monospace;
 }
-.tabla{
+
+.user-info{
+    list-style: disc;
+    font-size: 1.5vw;
+    font-family: Alfa Slab One;
+    margin-left: 5%;
+    color: white;
+}
+
+.info{
+    text-decoration: underline double white 2px;
+}
+
+.perfil{
+    width: 13vw;
+    height: 13vw;
+    margin-left: 8%;
+    border: dashed red 10px;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    width: 70vw;
+    height: 26vw;
+    border-radius: 2vw;
+}
+
+.accesos{
     text-align: center;
-    margin-left: 500px;
-    margin-bottom: 10px;
 }
 
-
-.tt{
-    font-size:60px;
-    color: #fff;
-}
-.h{
-    font-size: 25px;
-    color: #fff;
-}
-.user-screen {
-    background-color: #FFF;
-    height: 700px;
-
-    border-radius: 5px;
-    padding-top: 20px;
-    margin-top: 25px;
-    margin-left: 75px;
-    margin-right: 75px;
-   
-}
-.link_a{
-    text-decoration: none;
-    color: #FFF;
-}
-.bb{
-    float: under;
-    top: 50px;
-    left: 50px;
-    background: rgb(252, 85, 85);
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
-}
-.cc{
-    
-    float: under;
-    left:45px;
-    margin-top: 100px;
-    background:rgb(252, 85, 85);
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
-}
-.hz{
-    font-size: 25px;
-    color: #fff;
-    text-decoration: underline;
-}
-.enter-user-screen {
-    margin-top: 50px;
-    text-align: center;
-    background-color: rgb(252, 85, 85);
-    width:1500px;
-    float: right;
-    border-radius: 5px;
-    margin-right: 10px;
-    
+.accesos button{
+    font-family: Alfa Slab One;
+    margin-right: 6.5vw;
+    margin-left: 6.5vw;
+    font-size: 1.3vw;
+    width: 18vw;
+    background-color: rgb(173, 18, 18);
+    color: white;
+    height: 3.5vw;
 }
 
+.accesos button:hover{
+    color: white;
+    background-color: #333;
+}
 /*Footer*/
 .nombres{
     background-color: #100c08;
@@ -246,7 +221,6 @@ h4{
     text-transform: uppercase;
     font-size: 1.5vw;
 }
-
 
 .santy{text-shadow: 0 0 0.2em #ff14ff}
 .mingo{text-shadow: 0 0 0.2em #099FFF}
